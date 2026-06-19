@@ -37,14 +37,6 @@ export default function Home() {
           >
             Open the app
           </Link>
-          <a
-            href="https://nextjs.org/docs"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex h-12 items-center justify-center rounded-full border border-black/[.08] px-8 text-sm font-medium transition-colors hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-white/[.06]"
-          >
-            Learn more
-          </a>
         </div>
       </section>
 

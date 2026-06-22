@@ -29,16 +29,28 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-sans">
-        <header className="border-b border-black/[.08] dark:border-white/[.145]">
+        <header className="sticky top-0 z-50 border-b border-(--border) bg-(--background)/70 backdrop-blur-xl">
           <nav className="mx-auto flex w-full max-w-5xl items-center justify-between px-6 py-4">
-            <Link href="/" className="text-lg font-semibold tracking-tight">
+            <Link
+              href="/"
+              className="flex items-center gap-2 text-lg font-semibold tracking-tight transition-opacity hover:opacity-70"
+            >
+              <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-accent text-sm font-bold text-white">
+                T
+              </span>
               Taskly
             </Link>
-            <div className="flex items-center gap-6 text-sm font-medium">
-              <Link href="/" className="hover:underline">
+            <div className="flex items-center gap-1 text-sm font-medium">
+              <Link
+                href="/"
+                className="rounded-lg px-3 py-1.5 text-muted transition-colors hover:bg-black/[.04] hover:text-foreground dark:hover:bg-white/[.06]"
+              >
                 Home
               </Link>
-              <Link href="/todos" className="hover:underline">
+              <Link
+                href="/todos"
+                className="rounded-lg px-3 py-1.5 text-muted transition-colors hover:bg-black/[.04] hover:text-foreground dark:hover:bg-white/[.06]"
+              >
                 Todos
               </Link>
             </div>
